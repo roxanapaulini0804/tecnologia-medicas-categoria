@@ -108,7 +108,7 @@
 
     row-gap: 1rem;
     // padding: 3rem;
-    padding:2rem;
+    padding:4rem;
     z-index: 5;
     // padding-bottom: 3rem;
     // display: none;
@@ -129,7 +129,7 @@
         appearance: none !important;
     }
     input, select {
-        height: 2.5rem;
+        height: 4rem;
         width: 100%;
         border-radius: .7rem;
         border: none;
@@ -137,7 +137,7 @@
         padding-left: .5rem;
         outline: none;
         @include m.desktop_1020 {
-            height: 2rem;
+           
             font-size: 1.5rem;
             
         }
@@ -232,12 +232,12 @@
     margin: 0 auto 1rem; /* Centramos el logo de escritorio */
 }
 
-/* Logo para móvil */
 .logoMobile {
-    display: none; /* Ocultar por defecto en todas las pantallas */
-    width: 100px; /* Tamaño para móviles */
+    display: none;
+    width: 150%; /* Asegura que ocupe todo el ancho permitido */
+    
     height: auto;
-    margin: 0; /* Sin márgenes adicionales */
+    margin: 0; /* Centrado horizontal */
 }
 
 
@@ -263,7 +263,7 @@
 input {
    
     padding: 2rem 0.5rem; // Incrementa el padding vertical para mayor altura
-    height: 3rem; // Define una altura fija para los inputs
+    
     
     font-size: 1rem; // Ajusta el tamaño del texto en los inputs
     box-sizing: border-box; // Asegura que padding y border no desborden el contenedor
@@ -329,13 +329,14 @@ input {
     row-gap: 1.2rem;
     align-items: flex-start; 
     text-align: left;
-    margin-top: 1.5rem; 
+    margin-top: -2rem; 
 }
 
 .bloque1LeftSubtitle h4 {
-    margin: 1rem;
+    margin: 0rem;
+    padding-bottom: 2rem;
     font-weight: 400; 
-    font-size: 2.3rem; 
+    font-size: 2.4rem; 
     line-height: 1.4; 
     color: black; 
     @include m.tablet_768 {
@@ -366,7 +367,7 @@ input {
 }
 .h3Container h3 {
     position: absolute; 
-    top:-2rem;
+    top:-1rem;
     width: 2rem;
     margin: 0;
     font-weight: 700; 
@@ -404,7 +405,7 @@ input {
     flex-direction: column;
     row-gap: 0.3rem;
     position: relative;
-    top: 6rem; // Ajusta según necesites
+    top: 7rem; // Ajusta según necesites
     @include m.tablet_768 {
         top: 6rem; 
     }
