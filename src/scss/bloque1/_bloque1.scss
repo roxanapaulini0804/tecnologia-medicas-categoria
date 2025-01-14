@@ -100,8 +100,10 @@
 
 .bloque1Form {
     background-color: white;
-    width: 25rem;
-    border-radius: 1rem;
+    width: 35rem;
+    // border-radius: 1rem;
+    border-bottom-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,14 +115,14 @@
     // padding-bottom: 3rem;
     // display: none;
     @include m.phone_390 {
-        width: 32rem;
+        width: 35rem;
     }
     @include m.desktop_1020 {
-        padding: 5rem;
+        padding: 4rem;
         width: 40rem;
     }
     @include m.desktop_1400 {
-        padding: 5rem;
+        padding: 4rem;
         width: 40rem;
     }
 
@@ -405,12 +407,12 @@ input {
     flex-direction: column;
     row-gap: 0.3rem;
     position: relative;
-    top: 7rem; // Ajusta según necesites
+    top: 2rem; // Ajusta según necesites
     @include m.tablet_768 {
-        top: 6rem; 
+        top: 2rem; 
     }
     @include m.desktop_1200 {
-        top: 6rem; 
+        top: 2rem; 
     }
     
 
