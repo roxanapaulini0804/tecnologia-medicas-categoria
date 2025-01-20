@@ -18,30 +18,35 @@
       color: #000;
       line-height: 1.2;
       margin: 5rem auto;
+      width: 22rem;
       
 
       @include m.phone_320 {
         font-size: 2.3rem;
-        width: 30rem;
+        
+       
       }
       
       @include m.tablet_700 {
         font-size: 2.5rem;
         width: 45rem;
+        
       }
 
       @include m.desktop_1000{
         font-size: 2.8rem;
-        width: 45rem;
+        width: 50rem;
+        
       }
 
       @include m.desktop_1020{
         font-size: 2.9rem;
-        width: 50rem;
+       
       }
       @include m.desktop_1200{
         font-size: 2.9rem;
-        width: 50rem;
+        
+       
       }
      
     }
@@ -91,6 +96,7 @@
     
       img {
         width: 100%; /* La imagen ocupa todo el ancho */
+        height:280px; /* Altura automática basada en el contenido */
         aspect-ratio: 16 / 9; /* Mantiene una proporción de 16:9 */
         object-fit: cover; /* Asegura que la imagen no se deforme */
         border-top-left-radius: 8px;
@@ -115,17 +121,17 @@
                 font-weight: bold;
                 margin: 0;
                 color: #fff;
-                height: 10rem;
+                height: 7rem;
             }
 
             a {
-                font-size: 1.4rem;
+                font-size: 1.3rem;
                 margin-top: auto;
                 color: #fff;
-                justify-content: center;
-                text-align: center;
-                padding-top: 1.8rem;
-                display: flex;
+                justify-content: left;
+                text-align: left;
+                // padding-top: 1rem;
+                display: left;
                 flex-direction: column; 
                 align-items: center; 
                 font-family: "Poppins", sans-serif;
@@ -158,6 +164,82 @@
 }
 
 
+
+/* Estilo para la paginación (puntos) */
+.swiper-pagination.swiper-pagination-bloque3 {
+  position: absolute;
+  padding-bottom:-1rem ;
+ 
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+/* Estilo de los puntos de la paginación */
+.swiper-pagination.swiper-pagination-bloque3 .swiper-pagination-bullet {
+  background-color: black; /* Color de los puntos inactivos */
+  width: 10px; /* Tamaño del punto */
+  height: 10px;
+  margin: 0 5px; /* Espaciado entre los puntos */
+  border-radius: 50%; /* Forma redondeada */
+  opacity: 0.7; /* Transparencia */
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination.swiper-pagination-bloque3 .swiper-pagination-bullet-active {
+  background-color: #f00; /* Color del punto activo */
+  width: 12px; /* Tamaño del punto activo */
+  height: 12px;
+  opacity: 1; /* Totalmente opaco */
+  transform: scale(1.2); /* Efecto de agrandamiento */
+}
+
+
+
+/* Fondo para Estomatología */
+.card-content-movil.estomatologia-bg {
+  background-image: url("https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/estomatologia-1.webp"); /* Imagen específica */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  // padding: 10px;
+ 
+  
+}
+
+.card-content-movil.enfermeria-bg {
+  background-image: url("https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/enfermeria-movil-background.webp"); /* Imagen específica */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  // padding: 10px;
+ 
+}
+
+.card-content-movil.veterinaria-bg {
+  background-image: url("https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/veterinaria-background.webp"); /* Imagen específica */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  // padding: 10px;
+ 
+}
+
+.card-content-movil.tecnologias-bg {
+  background-image: url("https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/tecnologia-background.webp"); /* Imagen específica */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  // padding: 10px;
+ 
+}
+
+
+
+
     .swiper-pagination {
       bottom: 10px;
       text-align: center;
@@ -188,11 +270,11 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       overflow: hidden;
       width: 250px;
-      height: 435px;
+      height: 410px;
 
       img {
         width: 100%;
-        height: 180px;
+        height: 250px;
         object-fit: cover;
       }
 
@@ -216,17 +298,18 @@
           color: #fff;
           margin: 0;
           text-align: left;
-          height: 12rem;
+          height: 10rem;
         }
 
         a {
           font-size: 1.5rem;
           color: #fff;
           
-          padding-top: 2rem;
+          // padding-top: 2rem;
           display: flex;
           flex-direction: column; 
-          align-items: center; 
+         text-align: left;
+          align-items: left; 
           font-family: "Poppins", sans-serif;
 
           
@@ -276,3 +359,67 @@
     display: grid !important; /* Fuerza a mostrar en escritorio */
   }
 }
+
+
+/* Fondo para Estomatología */
+.card-content.estomatologia-bg.estomatologia-bg {
+  background-image: url("https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/estomatologia-1.webp"); /* Imagen específica */
+  
+    background-size: cover; 
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 40%; /* Asegura que el fondo ocupe todo el contenedor */
+    
+    margin: 0;
+}
+
+.card-content.enfermeria-bg.enfermeria-bg {
+  background-image: url("https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/bakground-celeste-enfermeria.png"); /* Imagen específica */
+  
+    background-size: cover; 
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 40%; /* Asegura que el fondo ocupe todo el contenedor */
+    
+    margin: 0;
+}
+
+
+.card-content.veterinaria-bg.veterinaria-bg {
+  background-image: url("https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/bakground-naranja.webp"); /* Imagen específica */
+  
+    background-size: cover; 
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 40%; /* Asegura que el fondo ocupe todo el contenedor */
+    
+    margin: 0;
+}
+
+
+.card-content.veterinaria-bg.veterinaria-bg {
+  background-image: url("https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/bakground-naranja.webp"); /* Imagen específica */
+  
+    background-size: cover; 
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 40%; /* Asegura que el fondo ocupe todo el contenedor */
+    
+    margin: 0;
+}
+
+.card-content.tecnologias-bg.tecnologias-bg {
+  background-image: url("https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/bakground-turquesa-tecnologia.webp"); /* Imagen específica */
+  
+    background-size: cover; 
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 40%; /* Asegura que el fondo ocupe todo el contenedor */
+    
+    margin: 0;
+}
+
+
+
+
+

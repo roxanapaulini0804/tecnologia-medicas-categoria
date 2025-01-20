@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 .bloque6 {
-    background-color: #D53EFC; /* Fondo */
+    background-color:  #FF0C29;
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -81,7 +81,7 @@
 
 @media (min-width: 999px) {
     .bloque6 {
-        background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/bloque6-escudo-negro.png'); /* URL de la imagen */
+        background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/background-bloque3.webp'); /* URL de la imagen */
         background-size: contain; /* Ajustar el tamaño para que se adapte */
         background-position: right center; /* Posicionar pegado al lado derecho */
         background-repeat: no-repeat; /* No repetir la imagen */

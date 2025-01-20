@@ -14,7 +14,7 @@
 
 .bloque1Container {
     @include m.desktop_1020 {
-        background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/tecnologia-medica-portada.webp');
+        background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/LP-especialidades-general.webp');
         background-size: cover;
         background-position: center;
         background-repeat: none;
@@ -38,7 +38,7 @@
 
 .bloque1Background {
     // background-image: url('../img/beca18-simulacro-image-top-mobile.webp');
-    background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/portada-categoria-tecnologia-medica.webp');
+    background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/portada-movile.webp');
     background-size: cover;
     background-position: center;
     background-repeat: none;
@@ -354,36 +354,64 @@ input {
     position: relative; 
     display: flex; 
     align-items: center; 
+    img {
+        position: absolute;
+        width: 3rem;
+        height: auto;
+        left: -0.9rem;
+        z-index: 2;
+        top:33rem;
+        @include m.desktop_1020 {
+            width: 3.4rem;
+           
+            left: -1rem;
+        }
+        @include m.tablet_768 {
+            
+            top:38rem;
+        }
+        @include m.desktop_1200 {
+            
+        }
+    }
+    
 }
 
-.h3Container img {
-    position: absolute; 
-    left: 0; 
-    width: 2.5rem;
-    height: auto; 
-    margin-left: -1rem; 
-    bottom: -5.4rem;
-    overflow: visible !important;
+
+// .h3Container img {
+//     position: absolute; 
+//     left: 0; 
+//     width: 2.5rem;
+//     height: auto; 
+//     margin-left: -1rem; 
+//     bottom: -5.4rem;
+//     overflow: visible !important;
     
     
-}
+// }
 .h3Container h3 {
     position: absolute; 
-    top:-1rem;
+    top:33rem;
     width: 2rem;
     margin: 0;
     font-weight: 700; 
-    font-size: 4.2rem; 
+    font-size: 4rem; 
     line-height: 1;
-    color: black; 
+    color:white;
     text-align: center;
+    z-index: 5;
+    @include m.phone_320 {
+        font-size: 3.5rem;
+       
+      }
     @include m.tablet_768 {
         font-size:4.3rem; 
+        top:38rem;
     }
     @include m.desktop_1200 {
         font-size: 5rem; 
     }
-
+   
     
 }
 
@@ -402,18 +430,17 @@ input {
 
 
 .bloque1LeftSubtitle1 {
-    color: black;
+    color:white;
     display: flex;
     flex-direction: column;
     row-gap: 0.3rem;
     position: relative;
+    width: 50rem;
     top: 2rem; // Ajusta según necesites
     @include m.tablet_768 {
-        top: 2rem; 
+        top: 8rem; 
     }
-    @include m.desktop_1200 {
-        top: 2rem; 
-    }
+   
     
 
     img {
@@ -433,9 +460,9 @@ input {
         }
     }
     h3, h4 {
-        margin: 0;
-        font-weight: 600;
-        font-size: 1.8rem;
+        top:40rem;
+        font-weight: 400;
+        font-size: 1.4rem;
         position: relative;
         z-index: 5;
         @include m.tablet_768 {

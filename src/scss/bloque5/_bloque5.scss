@@ -11,6 +11,19 @@
     justify-content: center;
     align-items: flex-start;
     position: relative; /* Asegura que todos los elementos se posicionen correctamente */
+    min-height: 400px; /* Ajusta la altura mínima del contenedor */
+}
+
+/* General */
+.bloque5 {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative; /* Asegura que todos los elementos se posicionen correctamente */
     min-height: 450px; /* Ajusta la altura mínima del contenedor */
 }
 
@@ -32,34 +45,19 @@
 
 .bloque5Left.bloque5Mobile p {
     font-size: 12px;
-    
     margin-bottom: 20px;
     line-height: 1.4;
     font-family: "Poppins", sans-serif;
 }
 
-/* Carrusel */
-.bloque5Mobile {
+/* Carrusel del bloque 5 */
+.bloque5Content.bloque5Mobile.swiper-bloque5 {
     position: relative;
     max-width: 350px;
     margin: 0 auto;
 }
 
-.carousel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-width: 350px; /* Ajusta el ancho máximo del carrusel */
-    margin: 0 auto; /* Centra el carrusel en la página */
-}
-
-.carousel-track-container {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-}
-
-.carousel-track {
+.bloque5Content.bloque5Mobile .swiper-wrapper {
     display: flex;
     transition: transform 0.3s ease-in-out;
     list-style: none;
@@ -67,7 +65,7 @@
     margin: 0;
 }
 
-.carousel-slide {
+.bloque5Content.bloque5Mobile .swiper-slide {
     min-width: 100%; /* Cada slide ocupa todo el ancho del contenedor */
     display: flex;
     justify-content: center; /* Centra los elementos horizontalmente */
@@ -76,7 +74,7 @@
     box-sizing: border-box;
 }
 
-.carousel-slide .sliderItemInfo2 {
+.bloque5Content.bloque5Mobile .sliderItemInfo2 {
     border: 2px solid white;
     border-radius: 10px;
     padding: 20px;
@@ -92,29 +90,34 @@
     align-items: center; /* Centra los elementos horizontalmente */
 }
 
-.carousel-slide img {
+.bloque5Content.bloque5Mobile .sliderItemInfo2 img {
     max-width: 80px;
     margin: 0 auto 15px;
 }
 
-.sliderItemInfo2 h3 {
+.bloque5Content.bloque5Mobile .sliderItemInfo2 h3 {
     margin: 0;
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
     margin-bottom: 10px;
     width: 20rem;
+    font-family: "Poppins", sans-serif;
+
 }
 
-.sliderItemInfo2 p {
+.bloque5Content.bloque5Mobile .sliderItemInfo2 p {
     font-size: 1.2rem;
     color: white;
     line-height: 1.4;
     margin: 0;
+    font-family: "Poppins", sans-serif;
+
 }
 
 /* Botones de navegación */
-.carousel-button {
+.bloque5Content.bloque5Mobile .swiper-button-prev-bloque5,
+.bloque5Content.bloque5Mobile .swiper-button-next-bloque5 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -131,20 +134,68 @@
     z-index: 10;
 }
 
-.carousel-button-left {
+.bloque5Content.bloque5Mobile .swiper-button-prev-bloque5 {
     left: 0.1px;
 }
 
-.carousel-button-right {
-    right:0.1px;
+.bloque5Content.bloque5Mobile .swiper-button-next-bloque5 {
+    right: 0.1px;
 }
 
-// .carousel-button:hover {
-//     background-color: rgba(255, 255, 255, 0.8);
-//     color: #000;
-// }
+
+/* Estilo general de la paginación */
+.swiper-pagination.swiper-pagination-bloque5 {
+    position: absolute;
+    padding-bottom: 20rem;
+ 
+    transform: translateX(-50%);
+    display: flex;
+ 
+    z-index: 10;
+}
+
+/* Puntos de paginación (inactivos) */
+.swiper-pagination-bloque5 .swiper-pagination-bullet {
+    width: 12px; /* Tamaño del punto */
+    height: 12px;
+    background-color: #ccc; /* Color inactivo */
+    border-radius: 50%; /* Forma circular */
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+/* Puntos activos */
+.swiper-pagination-bloque5 .swiper-pagination-bullet-active {
+    background-color: #0073e6; /* Color activo */
+    transform: scale(1.3); /* Tamaño más grande para resaltar */
+}
+
+/* Hover sobre los puntos */
+.swiper-pagination-bloque5 .swiper-pagination-bullet:hover {
+    background-color: #005bb5; /* Color al pasar el cursor */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Versión Desktop */
+
+
+
 .bloque5Content.bloque5Desktop {
     display: flex;
     flex-direction: column;
@@ -153,7 +204,7 @@
     margin-right: auto;
     padding-left: 40rem; /* Reduce el padding izquierdo */
     position: relative;
-    top: -28rem; /* Ajusta la posición vertical */
+    top: -25rem; /* Ajusta la posición vertical */
     max-width:700px; /* Reduce el ancho máximo */
     max-height:50px ; /* Reduce el ancho máximo */
 }
